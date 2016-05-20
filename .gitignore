@@ -28,7 +28,11 @@
 *.app
 
 ipch/
-build/
+Debug/
+Release/
 *.user
 *.sdf
 *.suo
+*.pdb
+*.ilk
+*.exp

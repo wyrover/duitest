@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+	
+	<HorizontalLayout>
+		<!-- 左侧 -->
+		<VerticalLayout>
+			<HorizontalLayout height="190">
+				<Label name="linkphoto" pos="0,0,190,125" padding="5,50,5,0" bkimage="HomePage/phonelink.png" />			
+				<VerticalLayout padding="5,50,0,0">
+					<Label  name="tasktip" textcolor="#FF6DAAFD" font="4" text="用户未登录，请登录..." />
+					<Text  name="softwaretip" padding="0,10,0,0" textcolor="#FF858889" showhtml="true" font="5" text="一款绿色软件,永久免费。共享手机淘宝流量的平台。全国首家无线端的真实免费的互踩软件。独家研发的鼠标键盘驱动,让鼠标键盘动起来,每个浏览过程都可以看到！" />
+				</VerticalLayout>					
+			</HorizontalLayout>					
+			
+			<VerticalLayout height="100">	
+				<WebBrowser name="homead1" />																							
+			</VerticalLayout>
+			
+			<HorizontalLayout>
+				<Button name="btnLogIn2" bkcolor="#FFF00000" float="true" pos="200,40,400,85" text="登 录"/>	
+			</HorizontalLayout>			
+											
+		</VerticalLayout>
+		
+		<!-- 分割线 -->
+		<Label name="linephoto" bkimage="HomePage/line.png" width = "4" />	
+		
+		<!-- 右侧 -->
+		<VerticalLayout width="250">
+			<VerticalLayout height="105">
+				<HorizontalLayout height="48">
+					<Label name="userhead" width="48" />
+					<VerticalLayout margin="10,0,10,0" >
+						<Button name="btnLogIn" width="70" text="登录账户" />
+						<Label  name="labelUserValidDate" text="用户有效期"/>
+					</VerticalLayout>						
+				</HorizontalLayout>					
+				<HorizontalLayout name="layout_user" visible="false" height="24">
+					<Button name="btnLogOut" text="退出账户" width="70" />
+					<Button name="btnModify" text="修改密码" width="70" />											
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+			<HorizontalLayout height="48" >
+				<Label  name="updatainfo" width="80" text="客服咨询：" />	
+				<Button name="clienticon" width="90" height="22" text=""/>										
+			</HorizontalLayout>
+			
+			<webbrowser name="homead2" />					
+
+		</VerticalLayout>
+		
+	</HorizontalLayout>
+	
+</Container>

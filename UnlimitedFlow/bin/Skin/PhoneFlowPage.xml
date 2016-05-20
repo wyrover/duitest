@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <!--  这里主要要设置clsid，保证控件可以创建成功  -->
+	<WebBrowser name="phoneFlowBrowser" homepage="about:blank" autonavi="true" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" />
+</Container>

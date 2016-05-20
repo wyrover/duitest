@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window sizebox="4,6,4,6" caption="0,0,0,30" defaultfontcolor="#FFFFFFFF">
+	<Font id="0" name="微软雅黑" size="14" bold="false" italic="false" />
+	
+	<VerticalLayout bordersize="1" bordercolor="#FF000000" inset="1,1,1,1">
+		<HorizontalLayout height="30" bkimage="Main/top_background.png" >
+			<Include source="Top.xml" count="1" />
+		</HorizontalLayout>
+		
+		<!--  这里主要要设置clsid，保证控件可以创建成功  -->
+		<WebBrowser name="flowTaskBrowser" homepage="about:blank" autonavi="true" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" />
+    </VerticalLayout>
+    
+</Window>

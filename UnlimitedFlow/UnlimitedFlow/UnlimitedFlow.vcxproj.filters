@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{0b88c867-5074-4121-9f77-68f7d246a5ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="UnlimitedFlow.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWnd.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonDefine.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="HomePageUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneFlowPageUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneFlowBrowserEventHandler.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="FlowTaskWnd.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="FlowTaskBrowserEventHandler.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="UnlimitedFlow.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWnd.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="HomePageUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneFlowPageUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneFlowBrowserEventHandler.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowTaskWnd.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowTaskBrowserEventHandler.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UnlimitedFlow.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="UnlimitedFlow.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

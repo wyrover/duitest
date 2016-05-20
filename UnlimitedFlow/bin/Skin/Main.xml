@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="900,630" sizebox="4,6,4,6" caption="0,0,0,102" mininfo="900,630" defaultfontcolor="#FFFFFFFF" >
+	<!-- Font会自动编号，从1开始 -->
+    <Font id="0" name="微软雅黑" size="14" bold="false" italic="false" />
+	<Font id="1" name="宋体" size="12" bold="true" italic="false" />
+	<Font id="2" name="宋体" size="16" bold="true" italic="false" />
+	<Font id="3" name="微软雅黑" size="32" bold="true" italic="false" />
+	<Font id="4" name="微软雅黑" size="26" bold="false" italic="false" />
+	<Font id="5" name="微软雅黑" size="12" bold="false" italic="false" />
+	<!--
+		Window  
+		|--------Image 图片信息 
+		| o------name string 
+		| o------restype string 
+		| o------mask unsigned long# 
+		| 
+		|--------Font 字体信息 
+		| o------id string 根据id来进行匹配字体 
+		| o------name string 
+		| o------size long 
+		| o------bold bool 
+		| o------underline bool 
+		| o------default bool 
+		| 
+		|--------Default 默认Attribute属性 
+		| o------name string 
+		| o------value string 
+		
+		这里的颜色都是按照ARGB的格式来的，因此要使用#FFFFFFFF的长度来表示颜色，使用#FFFFFF的话会导致全透明
+	-->
+	<Default />
+
+    <VerticalLayout bordersize="1" bordercolor="#FF000000" inset="1,1,1,1">
+		<HorizontalLayout height="102">
+			<VerticalLayout bkimage="Main/top_background.png">
+				<HorizontalLayout height="30">
+					<Include source="Top.xml" count="1" />
+				</HorizontalLayout>
+				<HorizontalLayout height="72">
+					<HorizontalLayout>
+						<!-- 设置为72x72大小，横向间隔5 -->
+						<Option name="option_homepage" pos="15, 0, 87, 72"   float="true" align="bottom" text="首页"     font="1" textpadding="0,40,0,2" foreimage="file='Main/option.png' source='0,0,45,45'    dest='13,0,58,45'" normalimage="" hotimage="file='Main/option_bg.png' source='0,0,72,72'" pushedimage="file='Main/option_bg.png' source='0,72,72,144'" selectedimage="file='Main/option_bg.png' source='0,72,72,144'" group="quickbar" selected="true"/>
+						<Option name="option_flow"     pos="92, 0, 164, 72"  float="true" align="bottom" text="无线流量" font="1" textpadding="0,40,0,2" foreimage="file='Main/option.png' source='45,0,90,45'   dest='13,0,58,45'" normalimage="" hotimage="file='Main/option_bg.png' source='0,0,72,72'" pushedimage="file='Main/option_bg.png' source='0,72,72,144'" selectedimage="file='Main/option_bg.png' source='0,72,72,144'" group="quickbar"/>
+						<Option name="option_push"     pos="169, 0, 241, 72" float="true" align="bottom" text="推广赚钱" font="1" textpadding="0,40,0,2" foreimage="file='Main/option.png' source='135,0,180,45' dest='13,0,58,45'" normalimage="" hotimage="file='Main/option_bg.png' source='0,0,72,72'" pushedimage="file='Main/option_bg.png' source='0,72,72,144'" selectedimage="file='Main/option_bg.png' source='0,72,72,144'" group="quickbar"/>
+						<Option name="option_account"  pos="246, 0, 318, 72" float="true" align="bottom" text="账户信息" font="1" textpadding="0,40,0,2" foreimage="file='Main/option.png' source='180,0,225,45' dest='13,0,58,45'" normalimage="" hotimage="file='Main/option_bg.png' source='0,0,72,72'" pushedimage="file='Main/option_bg.png' source='0,72,72,144'" selectedimage="file='Main/option_bg.png' source='0,72,72,144'" group="quickbar"/>
+						<Option name="option_pay"      pos="323, 0, 395, 72" float="true" align="bottom" text="积分充值" font="1" textpadding="0,40,0,2" foreimage="file='Main/option.png' source='225,0,270,45' dest='13,0,58,45'" normalimage="" hotimage="file='Main/option_bg.png' source='0,0,72,72'" pushedimage="file='Main/option_bg.png' source='0,72,72,144'" selectedimage="file='Main/option_bg.png' source='0,72,72,144'" group="quickbar"/>
+					</HorizontalLayout>
+					<HorizontalLayout width="150">
+						<Label text="手机未连接" width="150" font="2" textpadding="0,38,0,2" bkimage="file='Main/phone_conn_state.png' source='0,0,32,33' dest='98,35,130,68'"/>
+					</HorizontalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout bkcolor="#FFFFFFFF">
+			<HorizontalLayout>
+				<TabLayout name="switch">
+					<HomePage />
+					<PhoneFlowPage />
+					<Text bkcolor="#FF0000FF" text="推广赚钱" pos="335, 180, 600, 300" relativepos="50,50,0,0" float="true" font="3" />
+					<Text bkcolor="#FFFF0000" text="账户信息" pos="335, 180, 600, 300" relativepos="50,50,0,0" float="true" font="3" />
+					<Text bkcolor="#FF00F00F" text="积分充值" pos="335, 180, 600, 300" relativepos="50,50,0,0" float="true" font="3" />
+				</TabLayout>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout height="24">
+			<Label text="底部" />
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>
