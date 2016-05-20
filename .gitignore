@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+ipch/
+build/
+*.user
+*.sdf
+*.suo
